@@ -1,0 +1,19 @@
+import random
+
+def will_weapon_hit(weaponChanceToHitPercentage):
+    isHitChance = random.uniform(0,100)
+    if (isHitChance < weaponChanceToHitPercentage):
+        return "hit"
+    else:
+        return "not hit"
+
+
+x = 0
+
+listHit = []
+
+while x < 10:
+    x = x + 1
+    listHit.append(will_weapon_hit(60))
+    
+print(listHit)
